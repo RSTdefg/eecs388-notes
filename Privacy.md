@@ -1,0 +1,21 @@
+- What is privacy
+	- Seclusion: the right to be let alone
+	- Limits: the ability to limit access
+	- Control: control over information
+	- Secrecy: the option of secrecy
+	- Liberty: a prerequisite for political liberty
+- Tracking mechanisms: 
+	- Third-party cookies
+	- browser fingerprinting
+	- Privacy badger
+- Data anonymization:
+	- k-anonymity: ensure each record is indistinguishable from at least k-1 other records
+	- Differential privacy: achieve by adding random noise
+- Defense against government intrusion to privacy:
+	- Off-the-record messaging
+		- message confidentiality, authentication, forward secrecy, deniability
+- Tor, Onion-routing
+	- No Tor relay knows both the client's address and the destination address
+		- entry node: knows client's address and identity of middle node
+		- exit node: knows a tor client is connecting to destination
+		- destination: knows a Tor user is connecting

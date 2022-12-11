@@ -1,0 +1,18 @@
+- Election system security requirements
+	- Integrity
+	- Ballot Secrecy
+	- Voter Authentication
+	- Enfranchisement: all authorized voters ahve the opportunity to vote
+	- Availability
+- Election Hacking
+	- diverse, decentralized voting technology
+		- choose weakest targets in closest states
+	- machines aren't connected to the internet
+		- target election management computers to spread malware to the voting machines
+	- >85% of us votes have a paper record
+		- states don't look at paper
+- End-to-End verifiable voting
+- Key defense: paper ballots, post-election audits
+- Evidence-ased methods to show election outcomes are correct
+
+- 

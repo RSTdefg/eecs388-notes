@@ -1,0 +1,9 @@
+- ARP Spoofing: Host X can force IP traffic between any two other hosts A and B to flow through X (MitM!)
+- IP Protocol:
+	- Sender sets Source Address, Routers do not verify
+	- Connectionless
+	- Unreliable
+	- 
+- Transmission Control Protocol (TCP)
+	- Data from application layer is sent in segments: sequences of contiguous bytes sent in a single IP datagram
+	- Bytes in application data stream numbered with 32-bit sequence number

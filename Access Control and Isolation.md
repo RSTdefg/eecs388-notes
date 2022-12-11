@@ -1,0 +1,42 @@
+- Security Model
+	- subjects: who 
+		- UNIX: users
+		- Android: apps
+		- Web: origins
+	- objects: what
+		- UNIX: files, processes, devices
+		- Other: db tables, cookies, device sensors, etc.
+		- Operations
+- Security Policy:
+	- access control matrix that maps subjects and objects to allowed operations
+- Security Mechanism
+- Principle of least Privilage: every program and user should operate using the least amount of privilege necessary to complete its job
+- Principle of Complete Mediation:
+	- every access to every object must be checked for authority by a mediator
+	- Be careful of caching checks: if change in authority occurs, cached results must be updated, otherwise may be time-of-check, time-of-use vulnerabilities
+- UNIX Security Model:
+	- Users and groups: username, user id, belong to several groups, superusers
+	- File permissions: file permission bits: owner--group--others
+	- Processes: EUID: determines permissions of that process, inherit user and group of their parent process, can be changed by root
+- Process Isolation:
+	- be skeptical of all programs, isolate to achieve least privilege
+	- general goal: confinement: ensure misbehaving process cannot harm rest of system
+- Design: Reference monitor
+	- Mediates requests from applications
+	- Must always be invoked, must be tamperproof
+- chroot "jails", simple isolation mechanism provided by UNIX kernel
+	- Application cannot access files outside of jail because it cannot even name them
+- Ways to evade chroot isolation
+	- ...
+- System call interposition: monitor system calls and block unauthorized calls
+	- ptrace: process tracing, monitor checks policy, kills application if request is disallowed
+	- difficulty choosing policy for specific apps
+- Containers:
+	- confinement at the level of the operating system, which creates multiple isolated userspace instances, on the same os, kernel
+- Virtural machine
+	- emulate the entire computer, OS and all
+	- mediation provided by virtual machine monitor, hypervisor
+	- safety: malware can infect guest OS, cannot escape from the infected VM
+		- requires that VMM itself is not buggy
+- Covert channel: unintended communication channel between isolated components
+- Side Channels: leakage channel between isolated components

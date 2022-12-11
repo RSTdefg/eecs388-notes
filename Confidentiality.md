@@ -1,0 +1,29 @@
+- Keep the content of message *p* secret from an eavesdropper
+- Caesar Cipher
+	- Replace each plaintext letter with one a fixed  number of places down the alphabet
+- Vigènere cipher
+	- Encrypts successive letters using a sequence of  Caesar ciphers keyed by the letters of a keyword
+	- How to find n? One way: Kasiski method
+- One-time Pad (OTP)
+	- share a secret, very long string of random bits k, encrypt and decrypt with XOR
+	- provably secure, usually impractical
+	- never use any part of the pad
+- Stream Cipher: Use #PRG
+	- Use #PRF , random input as key
+	- Insecure: RC4
+	- Secure: ChaCha20
+- Block Cipher
+	- Consist of function that encyrpts fixed-size (n-bit) blocks with a resuable key k
+	- PRP (psudorandom permutation): has inverse
+	- [[AES]]
+	- Encrypting arbitrary-sized messages:
+		- Padding: add byte to end of message to make it a multiple of block size
+		- Cipher modes: algorithms for applying block ciphers to more than one block
+			- Encrypted codebook (ECB): **FLAWED**: same plaintext encrypt to same ciphertext
+			- Cipher-block chaining ([[CBC]]) mode
+				- ![[Screen Shot 2022-10-20 at 1.29.07 AM.png]]
+			- Counter ([[CTR]]) mode
+				- Turns a block cipher into a stream cipher
+				- Doesn't requre padding, efficient parallelism/ramdom access
+					- ![[Screen Shot 2022-10-20 at 1.29.40 AM.png]]
+- 

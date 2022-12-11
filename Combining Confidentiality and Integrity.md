@@ -1,0 +1,15 @@
+- Encryption methods are malleable: can transform a ciphertext into another ciphertext that decrypts to a related plaintext
+	- [[CBC]]: Flipping bits in ciphertext block i will:  completely corrupt decrypted block i, flip corresponding bits in decrypted block i+1
+	- [[CTR]]: Flipping bits anywhere in the ciphertext will flip corresponding bits in decrypted plaintext
+- MAC-then-Encrypt:
+	- with CBC mode, susceptible to CBC [[Padding Oracles]]
+- Encrypt then MAC:
+	- AEAD: Integrity and encryption in a single primitive
+- Key Sizes:
+	- For ciphers/PRGs:  
+		- 128 bits considered “classically” safe  
+		- For quantum-resistance, use 256 bits  
+	- For MACs/PRFs:  
+		- Want collision resistance  
+		- Output should be 2X size of cipher keys 
+		- e.g., use HMAC-SHA256 with AES-128

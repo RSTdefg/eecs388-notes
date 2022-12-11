@@ -1,0 +1,23 @@
+- Issue: Get a shared key
+- Diffie-Hellman Key Exchange: public conversation to derive a secret shared key
+	- Details
+		- p: large prime
+		- g: large primitive root modulo p
+		- Eve knows: p, g, g^a mod p, g^b mod p
+		- Eve wants to compute s(as the key) := g^ab mod p 
+	- Defending against MITM
+		- Trust-on-first-use
+		- Have users communicate out-of-band
+		- Rely on proximity to limit MITMs
+		- Use digital signatures
+		- Forward Security: allows temporary session key to communicate repeatedly
+- RSA: Public-key cryptography
+	- RSA can be used for confidentiality, integrity, and/or authenticity
+	- RSA drawbacks:
+		- 1000X slower than AES
+		- Messages must be shorter than N 
+		- Keys must be relatively huge
+	- Attacks on Textbook RSA
+		- Small e attack
+		- Stereotyped message attacks
+		- Forging signatures on random/specific messages

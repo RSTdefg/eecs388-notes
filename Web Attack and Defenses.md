@@ -1,0 +1,35 @@
+1. Cross-Site Request Forgery
+	- CSRF exploits the trust that a site has in a user's browser.
+	- Cookeis sent by browser are determined by the domain of the resource being requested
+	- CSRF attacks cause the user's browser to perform unwanted actions on a different site on the users behalf
+	- Drive-by Pharming: User visits malicious site, script on site scans home network looking for router:
+	- Defenses:
+		- Referer validation
+			- Allows sites to identify where visitors are coming from.
+			- For privacy, modern browser only send the domain on cross-origin requests.
+			- Referer not always sent
+				- Users can turn it off for privacy.  
+				- Attacker.com can disable it.  
+				- Not sent from bookmark or URL bar.
+		- Secret token validation
+			- Static tokens provide no protection
+			- Must use a session-dependent token, typically tied to a session cookie.  (Attacker cannot retrieve the cookie due to SOP.)
+		- SameSite cookies
+			- SameSite attribute prevents browser from sending cookie in cross-site requests.
+			- SameSite=Strict Cookie isn’t sent in any cross-site context, even when following a regular link
+			- SameSite=Lax Cookie isn’t sent on normal cross-site subrequests, but is allowed when following a regular link from.
+2. SQL Injection
+	- Often the easiest test for SQLi is to enter a single quote (') as part of the data, to check whether program constructs the SQL statement without properly sanitizing the input.
+	- Correct approach: never build SQL commands yourself at runtime!
+		- Parameterized (a.k.a. prepared) SQL statements
+		- language-specific methods for accessing data using native code
+3. XSS
+	- exploit sites that send untrusted inputs to browsers without proper validation or sanitization
+	- Reflected XSS
+	- Stored XSS: Samy Worm
+	- Defense: 
+		- Input validation: Checks all headers, cookies, query strings, form fields, and hidden fields (i.e., all user-controlled parameters that might appear in output) against a rigorous specification of what should be allowed
+		- Output escaping: Encode all special characters in output to prevent interpretation as code.
+		- Adopt a ‘positive’ security policy that specifies what is allowed.
+		- Content Security Policy: Site serves policy via HTTP header. Browsers will only execute scripts loaded in source files received from specified domains. Prohibits inline scripts and event-handling HTML attributes.
+		- Content-Security-Policy: default-src 'self'; img-src *;  media-src media1.com; script-src userscripts.example.com

@@ -1,0 +1,22 @@
+- Attacker Capabilities:
+	- Physical access
+	- In path: Attacker can see, add, and block packets
+	- On path: On path: Attacker can see and add packets, but cannot block packets
+	- Passive: can see, not modify
+	- Off path: cannot see network traffic of the victim
+- ARP Spoofing:
+	- Fastest responder generally wins
+- IP Protocol Network Layer Threats:
+	- Packets have a non-cryptographic checksum
+	- Packets offer no authentication, source set by sender
+	- Can set arbitrary destination address, network scanning
+- BGP Threats:
+	- BGP has no authentication — possible to announce someone else’s network → BGP hijacking
+	- Defense: RPKI
+- TCP Connection Spoofing:
+	- Off-path attacker can send initial SYN to  server ...  ... but cannot complete three-way  handshake without seeing the server’s  sequence number  
+	- 1 in 232 chance to guess right if initial sequence number chosen uniformly at random
+- TCP Reset Attack
+- Protecting DNS
+	- Authoritative DNS servers sign DNS  responses
+	- DNSSEC does not encrypt communications. DNS over TLS or HTTPS, on the other hand, does  encrypt DNS queries.

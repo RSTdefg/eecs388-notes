@@ -1,0 +1,168 @@
+{
+  "main": {
+    "id": "033423aceb1bbcdd",
+    "type": "split",
+    "children": [
+      {
+        "id": "cc3a8baddc288549",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b70c43ca20b0a4a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Control Hijacking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3fe953e633dbca6a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Malware.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e0de71c48c0b8b55",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Access Control and Isolation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8d40877e3d062ac9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Election Cybersecurity.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "714d9d89953aadab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SHA-256.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5d33511a9639b98d",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eec832bcdf53a44d",
+    "type": "split",
+    "children": [
+      {
+        "id": "90b642405298766a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "346810437b8c880d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime"
+              }
+            }
+          },
+          {
+            "id": "566312e477b90d50",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "19e023acc2c0bb06",
+    "type": "split",
+    "children": [
+      {
+        "id": "944586d1c4590616",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8def2eb303d969ab",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "SHA-256.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "714d9d89953aadab",
+  "lastOpenFiles": [
+    "HMAC.md",
+    "CTR.md",
+    "Key Exchange and Public Key Cryptography.md",
+    "Web Platform.md",
+    "HTTPS and the Web PKI.md",
+    "HTTPS Attacks and Defenses.md",
+    "Networking 101.md",
+    "Networking 102-Attacks.md",
+    "EECS 388.md",
+    "Control Hijacking.md"
+  ]
+}
