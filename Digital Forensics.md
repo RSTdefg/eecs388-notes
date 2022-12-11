@@ -1,0 +1,23 @@
+- Identify, Collection, Analysis, Report
+- Must not change the evidence
+	- Work with forensic image
+	- maintain chain of custody
+	- prioritize collection by volatility
+- Forensic image: preserves all partitions and residual data
+	- use write-blocker, only allows read commands to pass
+- Imaging RAM:
+	- Live-memory forensics
+	- Cold-boot attack: system can be rest and boot with software designed to image RAM
+	- Freeze memory chips
+- Collecting mobile devices
+	- Faraday bag
+- Digital forensics tools
+	- Autopsy
+- Hiding data:
+	- Encryption
+	- Obfuscation
+	- Watermarking
+	- Steganography
+- Anti-forensic techniques
+	- dont write data
+	- hard to overwrite data, encrypt data, physically destroy it
