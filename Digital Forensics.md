@@ -13,11 +13,5 @@
 	- Faraday bag
 - Digital forensics tools
 	- Autopsy
-- Hiding data:
-	- Encryption
-	- Obfuscation
-	- Watermarking
-	- Steganography
-- Anti-forensic techniques
-	- dont write data
-	- hard to overwrite data, encrypt data, physically destroy it
+- Hiding data:- Encryption- Obfuscation- Watermarking- Steganography
+- Anti-forensic techniques- dont write data- hard to overwrite data, encrypt data, physically destroy it

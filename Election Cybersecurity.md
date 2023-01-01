@@ -14,5 +14,3 @@
 - End-to-End verifiable voting
 - Key defense: paper ballots, post-election audits
 - Evidence-ased methods to show election outcomes are correct
-
-- 

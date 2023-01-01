@@ -1,0 +1,7 @@
+- Computer Fraud and Abuse Act (CFAA)
+	- Applies to any computer (interstate communication--internet)
+	- Makes it criminal to knowingly access a computer without authorization
+- Supreme Court decision limits reach of CFAA
+	- Likely allows pulling information from public databases, allows security researcher
+	- Good-faith security research should not be 
+- Rules:Obtain PermissionRespect the Environment Notify Immediately Maintain Confidentiality

@@ -1,15 +1,8 @@
 - Security Model
-	- subjects: who 
-		- UNIX: users
-		- Android: apps
-		- Web: origins
-	- objects: what
-		- UNIX: files, processes, devices
-		- Other: db tables, cookies, device sensors, etc.
-		- Operations
+	- subjects: who - UNIX: users- Android: apps- Web: origins
+	- objects: what- UNIX: files, processes, devices- Other: db tables, cookies, device sensors, etc.
 - Security Policy:
 	- access control matrix that maps subjects and objects to allowed operations
-- Security Mechanism
 - Principle of least Privilage: every program and user should operate using the least amount of privilege necessary to complete its job
 - Principle of Complete Mediation:
 	- every access to every object must be checked for authority by a mediator
@@ -27,7 +20,7 @@
 - chroot "jails", simple isolation mechanism provided by UNIX kernel
 	- Application cannot access files outside of jail because it cannot even name them
 - Ways to evade chroot isolation
-	- ...
+	- Create device that lets you access raw disk, Send signals to non-chrooted process, reboot
 - System call interposition: monitor system calls and block unauthorized calls
 	- ptrace: process tracing, monitor checks policy, kills application if request is disallowed
 	- difficulty choosing policy for specific apps

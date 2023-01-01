@@ -1,0 +1,10 @@
+- Detecting and Understanding censorship
+	- Challenges: Coverage(ipv4 scan w/global ip_id), Continuity(augur), Ethics(use infra machines)
+	- Side channels techniques
+		- DNS Layer: Satellite (2017): institutional open resolvers
+		- TCP/IP Layer: Spooky (2014), Augur(2017): Global IP_ID routers
+		- Application Layer: Quack (2018), HyperQuack(2020): services that reflect data (echo, http, ...)
+	- Spooky: uses TCP/IP side channels to detect whether a client and server can communicate![[Screenshot 2022-12-12 at 11.16.14 PM.png]]
+	- Augur: Repeat runs and use Sequential Hypothesis Testing to gradually build confidence
+- Investigating Commercial VPNs
+	- key challenge: rigor, scale, automation

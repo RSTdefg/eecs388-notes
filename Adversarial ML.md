@@ -1,0 +1,16 @@
+- Information Security Triad
+	- Confidentiality: of the ML model, training data, eval data
+	- Integrity: of the training data, of the model, of the eval data
+	- Availability: of training, of the trained modl
+- ML Basics: take small steps of gradient descent to minimize loss
+- Attack: - take gradient ascent to maximize loss- Black box attack- Boundary attack
+- Defense:- Adversarial training
+- Poisoning attacks
+	- generate insecure code in targeted contexts
+	- generates negative reviews for targeted products
+- Data extraction:
+	- extract private data from language model
+	- steps: 1. generate lots of text, 2. filter text with a membership inference attack
+- Defense: train models with differential 
+	- con: hurts accuracy
+- Current ML is not rebust and not private
